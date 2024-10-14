@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time-table System</title>
+    <link rel="stylesheet" href="lecture.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <div class="logo">
+                <img src="images/ITS.png" alt="ITS LOGO">
+                <h2>ITS</h2>
+            </div>
+            <nav>
+                <a href="index1.html" >Home</a>
+                <a href="#" class="active">Lectures</a>
+                <a href="#">Faculty</a>
+                <a href="Room.html">Room No.</a>
+                <a href="#">Labs</a>
+                <a href="#">Timetable</a>
+                <a href="#">Calendar</a>
+                <a href="#">Settings</a>
+            </nav><br><br><br><br><br><br><br><br><br>
+            <button class="logout">Logout</button>
+        </div>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <header>
+                <h1>Time Table Management System</h1>
+            </header>
+
+            <section class="lectures">
+                <!-- Form to Add a Lecture -->
+                <div class="form-container">
+                    <h2>Lectures</h2>
+                    <form id="lectureForm">
+                        <input type="text" placeholder="Subject Code" id="unitCode" required>
+                        <input type="text" placeholder="Subject Name" id="unitName" required>
+                        <input type="number" placeholder="Duration" id="duration" required>
+                        <input type="text" placeholder="Faculty Name" id="tutor" required>
+                        <input type="number" placeholder="Room No" id="roomCapacity" required>
+                        <div class="buttons">
+                            <button type="submit">Add Lecture</button>
+                            <button type="button" id="editLecture">Edit</button>
+                            <button type="button" id="updateLecture">Update</button>
+                            <button type="button" id="deleteLecture">Delete</button>
+                        </div>
+                    </form>
+                </div>
+
+                <!-- Table of Lectures -->
+                <table id="lecturesTable">
+                    <thead>
+                        <tr>
+                            <th>S.No</th>
+                            <th>Subject Code</th>
+                            <th>Subject Name</th>
+                            <th>Duration</th>
+                            <th>Faculty</th>
+                            <th>Room No</th>
+                            <th>Edit/Delete</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        
+                    </tbody>
+                </table>
+            </section>
+        </main>
+    </div>
+
+    <script src="lecture.js"></script>
+</body>
+</html>
