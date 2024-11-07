@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time-table System</title>
+    <link rel="stylesheet" href="lecture.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <div class="logo">
+                <img src="images/ITS.png" alt="ITS LOGO">
+                <h2>ITS</h2>
+            </div>
+            <nav>
+                <a href="index1.html" >Home</a>
+                <a href="lecture.html">Lectures</a>
+                <a href="#">Faculty</a>
+                <a href="#" class="active">Room No.</a>
+                <a href="#">Labs</a>
+                <a href="#">Timetable</a>
+                <a href="#">Calendar</a>
+                <a href="#">Settings</a>
+            </nav><br><br><br><br><br><br><br><br><br>
+            <button class="logout">Logout</button>
+        </div>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <header>
+                <h1>Time Table Management System</h1>
+            </header>
+
+            <section class="RoomNo">
+                <!-- Form to Add a Lecture -->
+                <div class="form-container">
+                    <h2>Room No.</h2>
+                    <form id="RoomForm">
+                        <input type="text" placeholder="Room Number" id="RoomNumber" required>
+                        <input type="text" placeholder="Room Name" id="RoomName" required>
+                        <input type="number" placeholder="Room Capacity" id="RoomCapacity" required>
+                        <input type="text" placeholder="Room Location" id="RoomLocation" required>
+                        <input type="number" placeholder="Room Avalability" id="RoomAvalability" required>
+                        <div class="buttons">
+                            <button type="submit">Add Room</button>
+                            <button type="button" id="editLecture">Edit</button>
+                            <button type="button" id="updateLecture">Update</button>
+                            <button type="button" id="deleteLecture">Delete</button>
+                        </div>
+                    </form>
+                </div>
+
+                <!-- Table of Lectures -->
+                <table id="RoomTable">
+                    <thead>
+                        <tr>
+                            <th>S.No</th>
+                            <th>Room Number</th>
+                            <th>Room Name</th>
+                            <th>Room Capacity</th>
+                            <th>Room Location</th>
+                            <th>Room Avalability</th>
+                            <th>Edit/Delete</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        
+                    </tbody>
+                </table>
+            </section>
+        </main>
+    </div>
+
+    <script src="room.js"></script>
+</body>
+</html>

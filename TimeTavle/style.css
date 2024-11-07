@@ -1,0 +1,111 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Main container */
+body {
+    display: flex;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 230px;
+    background-color: #099104;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: white;
+}
+
+.sidebar h2 {
+    color: white;
+    font-size: 1.5em;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.sidebar nav {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.sidebar nav a {
+    display: flex;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+    font-size: 1.1em;
+}
+
+.sidebar nav a:hover {
+    color: #ddd;
+}
+
+.sidebar nav a i {
+    margin-right: 10px;
+}
+
+/* Logout button */
+.logout {
+    background-color: #4a0072;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+    border: none;
+    font-size: 1em;
+    border-radius: 5px;
+    text-transform: uppercase;
+}
+
+.logout:hover {
+    background-color: #32004e;
+}
+
+/* Main content */
+.main-content {
+    flex-grow: 1;
+    padding: 20px;
+    background-color: #f5f5f5;
+}
+
+.main-content h1 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 150px;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    color: white;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+/* Individual cards */
+.profile { background-color: #7b1fa2; }
+.courses { background-color: #d81b60; }
+.timetables { background-color: #ffb74d; color: black; }
+.settings { background-color: #757575; }

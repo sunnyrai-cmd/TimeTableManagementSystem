@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <div class="background">
+        <div class="navbar">
+            <h2>CodingLab</h2>
+            <nav>
+                <a href="#">Home</a>
+                <a href="#">Product</a>
+                <a href="#">Services</a>
+                <a href="#">Contact</a>
+                <button class="login-btn">Login</button>
+            </nav>
+            
+        </div>
+        <div class="form-container">
+            <h2>Login</h2>
+            <form id="loginForm">
+                <label for="username">Username</label>
+                <input type="text" id="username" placeholder="Enter your email" required>
+                
+                <label for="password">Password</label>
+                <input type="password" id="password" placeholder="Enter your password" required>
+                
+                <div class="options">
+                    <label><input type="checkbox"> Remember me</label>
+                    <a href="#">Forgot password?</a>
+                </div>
+
+                <button type="button" onclick="login()">Login Now</button>
+                <p>Not a member? <a href="register.html">Signup Now</a></p>
+            </form>
+        </div>
+        
+    </div>
+    
+    <script src="login.js"></script>
+</body>
+</html>
